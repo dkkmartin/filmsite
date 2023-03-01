@@ -95,7 +95,7 @@
 
 .gallery__image {
   max-width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -104,7 +104,7 @@
   height: 100vh;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
   gap: 1em;
   justify-content: center;
   align-content: center;
@@ -113,6 +113,10 @@
 .gallery__image__container {
   display: grid;
   grid-template-rows: 1fr;
+}
+
+.gallery__image {
+  object-fit: fill;
 }
 
 .gallery__image,
