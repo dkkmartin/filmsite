@@ -104,7 +104,7 @@
   height: 100vh;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 100%));
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
   gap: 1em;
   justify-content: center;
   align-content: center;
@@ -182,7 +182,7 @@
 /* CAST */
 
 .main__cast {
-  height: 440vh;
+  height: 330vh;
   background-image: url(assets/img/fullscreen-bg.jpg);
   background-size: cover;
   background-position: top center;
@@ -194,7 +194,7 @@
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
-  gap: 5em;
+  gap: 7em;
 }
 
 .cast__section {
@@ -217,5 +217,5 @@
 }
 
 .footer__cast {
-  top: 432%;
+  top: 322%;
 }
