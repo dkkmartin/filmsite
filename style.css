@@ -111,12 +111,22 @@
 }
 
 .gallery__image__container {
+  display: grid;
+  grid-template-rows: 1fr;
 }
 
-.gallery__image {
-}
-
+.gallery__image,
 .gallery__image__para {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.gallery__image__para {
+  align-self: end;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 2% 0;
+  font-family: 'Oswald', sans-serif;
 }
 
 /* SYNOPSIS */
