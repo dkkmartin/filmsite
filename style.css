@@ -115,10 +115,6 @@
   grid-template-rows: 1fr;
 }
 
-.gallery__image {
-  object-fit: fill;
-}
-
 .gallery__image,
 .gallery__image__para {
   grid-column: 1 / 2;
@@ -139,7 +135,6 @@
   background-image: url(assets/img/fullscreen-bg.jpg);
   background-size: cover;
   background-position: center;
-  height: 120vh;
   font-family: 'Oswald', sans-serif;
   color: #fff;
 }
@@ -147,7 +142,7 @@
 .main__synopsis__container {
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 5%;
+  padding: 5% 0;
   display: grid;
   justify-items: center;
 }
@@ -187,6 +182,7 @@
 
 .text--30px {
   font-size: 30px;
+  font-weight: 400;
 }
 
 /* CAST */
