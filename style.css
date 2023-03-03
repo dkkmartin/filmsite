@@ -110,7 +110,6 @@
 .main__gallery {
   background-image: url(assets/img/fullscreen-bg.jpg);
   background-size: cover;
-  height: 100vh;
 }
 
 .gallery__image {
@@ -305,6 +304,10 @@
     display: none;
   }
 
+  .gallery__mobile__section {
+    display: block;
+  }
+
   .thumbnails__container__mobile {
     display: grid;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
@@ -472,6 +475,10 @@
   }
 
   /* MAIN */
+
+  .gallery__mobile__section {
+    display: block;
+  }
 
   .main__gallery {
     height: initial;
