@@ -28,7 +28,7 @@
 /* HEADER */
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   font-family: 'Open Sans', sans-serif;
   height: 8vh;
@@ -162,7 +162,7 @@
 .main__synopsis__container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 15vh 5%;
+  padding: 15vh 2vw;
   display: grid;
   justify-items: center;
 }
@@ -216,17 +216,16 @@
   color: #fff;
 }
 .main__cast__container {
-  padding: 15vh 5%;
+  padding: 15vh 1vw;
   max-width: 1000px;
   margin: 0 auto;
-
   display: grid;
   gap: 7em;
 }
 
 .cast__section {
   display: flex;
-  gap: 10vw;
+  gap: 5vw;
 }
 
 .cast__section:nth-child(even) {
@@ -529,7 +528,6 @@
   }
 
   .synopsis__table__mobile {
-    padding: 0 5%;
     display: grid;
     justify-self: center;
   }
