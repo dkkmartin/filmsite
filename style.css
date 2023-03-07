@@ -6,10 +6,43 @@
   box-sizing: border-box;
 }
 
+/*** OVERLAY ***/
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.big__image {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  max-width: 100%;
+  height: auto;
+}
+
+.big__image__src {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid white;
+}
+
+.big__image__para {
+  color: #fff;
+  font-family: 'Open sans', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
 /*** MODAL ***/
 
 .menu__modal {
-  position: absolute;
+  position: fixed;
   top: 0;
   height: 100vh;
   width: 100vw;
