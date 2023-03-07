@@ -634,3 +634,9 @@
     flex-direction: column;
   }
 }
+
+@media screen and (min-width: 801px) and (max-width: 932px) {
+  .thumbnails__container {
+    height: 120vh;
+  }
+}
