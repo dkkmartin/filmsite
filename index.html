@@ -7,6 +7,10 @@
     <script src="index.js" defer></script>
     <script src="https://kit.fontawesome.com/c8d7f3000a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>PARASITE</title>
   </head>
   <body>
@@ -44,6 +48,36 @@
       <div class="header__mobile__container">
         <img class="header__mobile__logo" src="assets/img/header.png" alt="Logo" />
         <i class="burger__icon fas fa-bars"></i>
+      </div>
+      <div class="animate__animated animate__fadeInDown menu__modal --hide">
+        <i class="modal__close fa-solid fa-xmark"></i>
+        <div class="header__links__container links__modal">
+          <ul class="header__ul ul__nav__modal">
+            <li class="header__link link--home link--focus"><a href="index.html">HOME</a></li>
+            <li class="header__link link--gallery"><a href="gallery.html">GALLERY</a></li>
+            <li class="header__link link--synopsis"><a href="synopsis.html">SYNOPSIS</a></li>
+            <li class="header__link link--cast"><a href="cast.html">CAST</a></li>
+          </ul>
+        </div>
+
+        <div class="header__icons__container icons__modal">
+          <ul class="header__ul ul__icons ul__icons__modal">
+            <li class="header__icon icon--twitter">
+              <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="header__icon icon--facebook">
+              <a href="https://facebook.com" target="_blank"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+            </li>
+            <li class="header__icon icon--linkedin">
+              <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li class="header__icon icon--instagram">
+              <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 

@@ -6,6 +6,40 @@
   box-sizing: border-box;
 }
 
+/*** MODAL ***/
+
+.menu__modal {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  color: #fff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #35532f;
+  text-align: center;
+  font-family: 'Open sans', sans-serif;
+  font-size: 20px;
+  gap: 5em;
+}
+
+.ul__nav__modal {
+  flex-direction: column;
+}
+
+.ul__icons__modal {
+  gap: 18vw !important;
+}
+
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2em;
+  padding: 5%;
+}
+
 /*** DEFAULT STYLE FOR MOBILE/TABLET ***/
 
 .--hide {
@@ -516,6 +550,10 @@
   /* MAIN */
 
   .main__synopsis__container {
+    display: none;
+  }
+
+  .logo__synopsis {
     display: none;
   }
 
