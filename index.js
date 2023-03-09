@@ -7,7 +7,6 @@ const bigImg = document.querySelector('.big__image')
 const bigImgSrc = document.querySelector('.big__image__src')
 const bigImgPara = document.querySelector('.big__image__para')
 const thumbnails = Array.from(document.querySelectorAll('.gallery__image'))
-console.log(thumbnails)
 
 function delay(time) {
   return new Promise(resolve => setTimeout(resolve, time));
@@ -32,9 +31,11 @@ thumbnails.forEach(picture => {
     overlay.style.display = 'block'
     bigImg.style.display = 'block'
     let whereAmI = picture.src.slice(42, 48)
+    console.log(whereAmI)
     if (whereAmI === 'thumb1') {
-      bigImgSrc.setAttribute('src', 'assets/img/parasite-big1.jpg')
+      bigImgSrc.setAttribute('src', '/assets/img/parasite-big1.jpg')
       bigImgPara.textContent = picture.getAttribute('alt')
+
     }
 
     if (whereAmI === 'thumb2') {
