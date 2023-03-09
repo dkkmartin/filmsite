@@ -26,33 +26,32 @@ modalClose.addEventListener('click', () => {
   })
 })
 
+overlay.addEventListener('click', e => {
+  if (e.target == overlay) {
+    overlay.style.display = 'none'
+    bigImg.style.display = 'none'
+    bigImgSrc.src = ''
+    bigImgPara.textContent = ''
+  }
+})
+
 thumbnails.forEach(picture => {
   picture.addEventListener('click', () => {
     overlay.style.display = 'block'
     bigImg.style.display = 'block'
-    let whereAmI = picture.src.slice(42, 48)
-    console.log(whereAmI)
-    if (whereAmI === 'thumb1') {
+    if (picture.src.includes('thumb1')) {
       bigImgSrc.setAttribute('src', '/assets/img/parasite-big1.jpg')
       bigImgPara.textContent = picture.getAttribute('alt')
-
     }
 
-    if (whereAmI === 'thumb2') {
+    if (picture.src.includes('thumb2')) {
       bigImgSrc.setAttribute('src', 'assets/img/parasite-big2.webp')
       bigImgPara.textContent = picture.getAttribute('alt')
     }
 
-    if (whereAmI === 'thumb3') {
+    if (picture.src.includes('thumb3')) {
       bigImgSrc.setAttribute('src', 'assets/img/parasite-big3.jpeg')
       bigImgPara.textContent = picture.getAttribute('alt')
-    }
-  })
-
-  overlay.addEventListener('click', e => {
-    if (e.target == overlay) {
-      overlay.style.display = 'none'
-      bigImg.style.display = 'none'
     }
   })
 });
