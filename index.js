@@ -40,7 +40,7 @@ thumbnails.forEach(picture => {
     overlay.style.display = 'block'
     bigImg.style.display = 'block'
     if (picture.src.includes('thumb1')) {
-      bigImgSrc.setAttribute('src', '/assets/img/parasite-big1.jpg')
+      bigImgSrc.setAttribute('src', 'assets/img/parasite-big1.jpg')
       bigImgPara.textContent = picture.getAttribute('alt')
     }
 
