@@ -215,6 +215,10 @@
   font-family: 'Oswald', sans-serif;
 }
 
+.gallery__image:hover + .gallery__image__para {
+  display: block;
+}
+
 /*** SYNOPSIS ***/
 /* MAIN */
 
