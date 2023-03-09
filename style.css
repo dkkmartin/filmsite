@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-/*** OVERLAY ***/
+/*** OVERLAY / LIGHTHOUSE ***/
 
 .overlay {
   width: 100vw;
@@ -103,7 +103,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.95) 25%,
+    rgba(0, 0, 0, 0.65) 75%,
+    rgba(0, 0, 0, 0.35) 100%
+  );
   color: #fff;
   padding: 0 10vw;
 }
@@ -162,8 +169,14 @@
 .footer {
   position: fixed;
   bottom: 0;
-  opacity: 0.5;
-  background-color: #000;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.95) 25%,
+    rgba(0, 0, 0, 0.65) 75%,
+    rgba(0, 0, 0, 0.35) 100%
+  );
   width: 100%;
   height: 86px;
   display: flex;
@@ -532,6 +545,10 @@
 
   .footer__index {
     display: none;
+  }
+
+  .footer__image {
+    width: 90%;
   }
 
   /*** GALLERY ***/
