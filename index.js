@@ -7,6 +7,8 @@ const bigImg = document.querySelector('.big__image')
 const bigImgSrc = document.querySelector('.big__image__src')
 const bigImgPara = document.querySelector('.big__image__para')
 const thumbnails = Array.from(document.querySelectorAll('.gallery__image'))
+const readMoreBtn = document.querySelectorAll('.read__more')
+const mobilePara = document.querySelectorAll('.mobile--hide')
 
 function delay(time) {
   return new Promise(resolve => setTimeout(resolve, time));
@@ -36,6 +38,17 @@ function randomAnimation() {
   }
 }
 
+readMoreBtn.forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (btn.previousElementSibling.classList.contains('mobile--hide')) {
+      btn.previousElementSibling.classList.remove('mobile--hide')
+    } else {
+      btn.previousElementSibling.classList.add('mobile--hide')
+    }
+    
+  })
+})
+
 menuBtn.addEventListener('click', () => {
   const animation = randomAnimation()
   modalMenu.style.display = 'flex'
@@ -52,6 +65,7 @@ modalClose.addEventListener('click', () => {
   modalMenu.classList.add(animation.animationOut)
   delay(1000).then(() => {
     modalMenu.style.display = 'none'
+    footer.style.display = 'flex'
     modalMenu.classList.remove(animation.animationOut)
   })
 })

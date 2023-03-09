@@ -537,6 +537,20 @@
   /*** GALLERY ***/
   /* HEADER */
 
+  .mobile--hide {
+    display: none;
+  }
+
+  .read__more {
+    display: flex;
+    border: none;
+    background-color: inherit;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1.2em;
+    margin: 0 auto;
+  }
+
   .mobile--gallery,
   .mobile--synopsis,
   .mobile--cast {
