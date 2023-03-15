@@ -42,8 +42,10 @@ readMoreBtn.forEach(btn => {
   btn.addEventListener('click', () => {
     if (btn.previousElementSibling.classList.contains('mobile--hide')) {
       btn.previousElementSibling.classList.remove('mobile--hide')
+      btn.textContent = 'Read less...'
     } else {
       btn.previousElementSibling.classList.add('mobile--hide')
+      btn.textContent = 'Read more...'
     }
     
   })
